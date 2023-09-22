@@ -1,4 +1,4 @@
-package com.example.dictionary;
+package com.example.dictionaryenvi;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -7,7 +7,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class ApplicationDic extends Application {
+public class Dictionary extends Application {
 
     public static void main(String[] args) {
         launch(args);
@@ -15,8 +15,8 @@ public class ApplicationDic extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(ApplicationDic.class.getResource("view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 768, 480);
+        FXMLLoader fxmlLoader = new FXMLLoader(Dictionary.class.getResource("view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
         stage.setTitle("Dictionary En-Vi");
         stage.setScene(scene);
         stage.show();

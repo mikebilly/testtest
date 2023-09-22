@@ -1,9 +1,9 @@
-module com.example.dictionary {
+module com.example.dictionaryenvi {
     requires javafx.controls;
     requires javafx.fxml;
 
-    requires com.almasb.fxgl.all;
+    requires org.kordamp.bootstrapfx.core;
 
-    opens com.example.dictionary to javafx.fxml;
-    exports com.example.dictionary;
+    opens com.example.dictionaryenvi to javafx.fxml;
+    exports com.example.dictionaryenvi;
 }
